@@ -1,37 +1,44 @@
-document.addEventListener('DOMContentLoaded',function(){
-  agregarEncabezado();
+document.addEventListener('DOMContentLoaded', function () {
+    agregarEncabezado();
 });
 
-function agregarEncabezado(){
-  
+function agregarEncabezado() {
 
-        //link.href = 'http://fonts.googleapis.com/css?family=Oswald&effect=neon';
-        
-        let link2 = document.createElement('link');
-        
-        link2.rel = 'stylesheet';
-        link2.href =  href="../css/normalize.css"
-        document.head.appendChild(link2);
-        let link3 = document.createElement('link');
-       
-        link3.rel = 'preconnect';
-        link3.href =  href="https://fonts.googleapis.com"
-        document.head.appendChild(link3);
 
-        let link4 = document.createElement('link');
-        
-        link4.rel = 'stylesheet';
-        link4.href =  href="https://fonts.googleapis.com/css2?family=Suez+One&display=swa";
-        document.head.appendChild(link4);
+    //link.href = 'http://fonts.googleapis.com/css?family=Oswald&effect=neon';
 
-        let link = document.createElement('link');
-        link.type = 'text/css';
-        link.rel = 'stylesheet';
-        link.href =  href="../css/barra.css"
-        document.head.appendChild(link);
+    let link2 = document.createElement('link');
 
-      
-  let nav = document.querySelector('header')
+    link2.rel = 'stylesheet';
+    link2.href = href = "../css/normalize.css"
+    document.head.appendChild(link2);
+    let link3 = document.createElement('link');
+
+    link3.rel = 'preconnect';
+    link3.href = href = "https://fonts.googleapis.com"
+    document.head.appendChild(link3);
+
+    let link4 = document.createElement('link');
+
+    link4.rel = 'stylesheet';
+    link4.href = href = "https://fonts.googleapis.com/css2?family=Suez+One&display=swa";
+    document.head.appendChild(link4);
+
+    let link = document.createElement('link');
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    link.href = href = "../css/barra.css"
+    document.head.appendChild(link);
+
+    let link5 = document.createElement('link');
+
+    link5.type = 'text/css';
+    link5.rel = 'stylesheet';
+    link5.href = href = "../css/tu-piedra.css"
+    document.head.appendChild(link);
+
+
+    let nav = document.querySelector('header')
     nav.innerHTML = `
    
     <div class="nav-contenedor">
@@ -46,7 +53,7 @@ function agregarEncabezado(){
     </div>
     <div class="parteD nav-centrado">
         <div class="encuentra">
-            <a href="#" class="visitado .nav-centrado">¡Encuentra tu piedra!</a>
+            <a href="./tu-piedra.html" class="visitado .nav-centrado">¡Encuentra tu piedra!</a>
         </div>
     </div>
     <div class="parteE nav-centrado">
