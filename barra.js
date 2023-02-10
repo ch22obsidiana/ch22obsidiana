@@ -79,7 +79,7 @@ function agregarEncabezado(){
                       <li class="li-encuentra">
                         <div class="parteD nav-centrado">
                             <div class="encuentra">
-                                <a href="#" class="visitado .nav-centrado">¡Encuentra tu piedra!</a>
+                                <a href="./findYourRock.html" class="visitado .nav-centrado">¡Encuentra tu piedra!</a>
                             </div>
                         </div>
                       </li>
@@ -98,7 +98,7 @@ function agregarEncabezado(){
                       </li>
                       
                         <li>
-                            <a href="#" class="parteF">¡Encuentra tu piedra!</a>
+                            <a href="./findYourRock.html" class="parteF">¡Encuentra tu piedra!</a>
                           </li>
                       
                         <li>
