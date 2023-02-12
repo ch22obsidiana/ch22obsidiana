@@ -37,7 +37,7 @@ function agregarEncabezado(){
 
         let script = document.createElement('script');
         
-        script.src = '../js/bar.js';
+        script.src = '/js/bar.js';
         document.head.appendChild(script);
 
         
