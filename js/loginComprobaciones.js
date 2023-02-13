@@ -45,6 +45,26 @@ const guardarUsuarios = () => {
         alert("no se pueden guardar datos vacios");
     }
 };
+/*
+const guardarUsuariosJson = () =>{
+    const usuario = obtenerValores;
+    {
+        nombre:usuario[2];
+        correo:usuario[3];
+        contrasenia:usuario[4];
+    }
+}
+;
+console.log(guardarUsuariosJson());
+
+const fs = require('fs');
+const usuariosJson = JSON.stringify(guardarUsuariosJson);
+fs.writeFile('usuarios.json', usuariosJson, (error) => {
+    if(error) throw error;
+    console.log('Archivo guardado');
+});
+*/
+
 /**
  * funcion que lee el localstorage y compara los datos para iniciciar sesion
  */
