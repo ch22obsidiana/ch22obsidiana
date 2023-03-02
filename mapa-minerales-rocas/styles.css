@@ -1,12 +1,10 @@
 body {
     background-color:rgb(210, 234, 255);
-    height: auto;
   }
 
   @media (max-width: 768px) {
     body {
       font-size: 14px;
-      height: auto;
     }
   }
   
@@ -14,7 +12,6 @@ body {
   @media (min-width: 768px) {
     body {
       font-size: 18px;
-      height: auto;
     }
   }
 
@@ -62,12 +59,4 @@ path:hover, circle:hover {
     padding: 12px;
     font-family: arial;
   }
- .ge{
-display: flex;
-align-items: center;
- }
- svg {
-  display: block;
-  margin: auto auto;
-  height: auto;
-}
+ 
