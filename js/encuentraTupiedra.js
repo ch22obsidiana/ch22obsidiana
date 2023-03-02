@@ -8,22 +8,22 @@ function getColor(value) {
         case "rojo":
             console.log("Piedra color roja");
             localStorage.setItem('ColorPiedra', JSON.stringify(value));
-            actualizarPiedra('rojo');
+            //actualizarPiedra('rojo');
             break;
             case "negro":
                 console.log("Piedra color negra");
                 localStorage.setItem('ColorPiedra', JSON.stringify(value));
-                actualizarPiedra('negra');
+               // actualizarPiedra('negra');
             break;
             case "azul":
                 console.log("Piedra color azul");
                 localStorage.setItem('ColorPiedra', JSON.stringify(value));
-                actualizarPiedra('azul');
+               // actualizarPiedra('azul');
             break;
             case "amarilla":
                 console.log("Piedra color amarilla");
                 localStorage.setItem('ColorPiedra', JSON.stringify(value));
-                actualizarPiedra('amarilla');
+              //  actualizarPiedra('amarilla');
             break;
         default:
             console.log("Producto no disponible");
@@ -33,13 +33,10 @@ function getColor(value) {
 }
 
 function imageSelected(signo){
-    /* signoBandera = true
-    if(signoBandera){
-        let signoImagen = document.getElementsByClassName("iconSimbol");
-        console.log(signoImagen);
-        signoImagen.classList.add("disabledEvents")
- 
-    }  */
+    let btnSigno = document.getElementsByClassName("iconSimbol");
+    for(let i=0;i<btnSigno.length;i++){
+        btnSigno[i].disabled = true;
+    }
     localStorage.setItem('signo', JSON.stringify(signo));
     console.log(signo);
 }
@@ -47,10 +44,15 @@ function imageSelected(signo){
 function inputEdad(rangoEdad){
     localStorage.setItem('rangoEdad', JSON.stringify(rangoEdad));
     console.log(rangoEdad);
+    let btnEdad = document.getElementsByClassName("age");
+    console.log(btnEdad);
+    for(let i=0;i<btnEdad.length;i++){
+        btnEdad[i].disabled = true;
+    }
     colorDeLocalstorage = JSON.parse(localStorage.getItem('ColorPiedra'))
     
 }
-
+/* 
 function actualizarPiedra(dato){
     document.getElementsByClassName("titleResultContainer").innerHTML=
     `<h1> ${Producto.nombre}</h1>`;
@@ -60,4 +62,4 @@ function actualizarPiedra(dato){
 
     document.getElementsByClassName("resultDescription").innerHTML =
     `<img src=${Producto.descripcion}`;
-}
+} */
