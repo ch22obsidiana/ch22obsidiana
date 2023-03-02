@@ -172,6 +172,10 @@ h4,h5{
     font-family: var(--fuenteText);
 }
 
+.disabledEvents{
+    pointer-events: none;
+}
+
 
 @media only screen and (max-width: 1104px)  {
     

@@ -38,25 +38,25 @@
               
                     <h2>¿Cuál es tu color favorito?</h2>
              
-                <input class="inputColor" type="text" placeholder="Introduce tu color">
+                <input class="inputColor" type="text" placeholder="Introduce tu color" onkeyup="getColor(this.value)">
 
             </div>
 
             <div class="signosContainer">
                 <h2>Tu signo Zodiacal </h2>
                 <div class="iconsContainer">
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/acuario_ghrdkp.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/aries_eyofou.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/cancer_yhqepy.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932614/iconos_zodiaco/capricornio_m4xkco.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/geminis_iqdnsp.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/leo_jigpfn.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/libra_ahucvl.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/piscis_vbsvlj.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/capricornio_uy8hvp.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/escorpio_jsor1e.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/tauro_fdbl0m.png" alt=""></div>
-                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/virgo_fu3vc2.png" alt=""></div>
+                    <div class="iconSimbol" onclick="imageSelected('acuario')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/acuario_ghrdkp.png" alt="" ></div>
+                    <div class="iconSimbol" onclick="imageSelected('aries')"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/aries_eyofou.png" alt="" ></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/cancer_yhqepy.png" alt="" onclick="imageSelected('cancer')"></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932614/iconos_zodiaco/capricornio_m4xkco.png" alt="" onclick="imageSelected('capricornio')"></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/geminis_iqdnsp.png" alt="" onclick="imageSelected('geminis')"></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/leo_jigpfn.png" alt="" onclick="imageSelected('leo')"></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/libra_ahucvl.png" alt="" onclick="imageSelected('libra')"></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/piscis_vbsvlj.png" alt="" onclick="imageSelected('piscis')"></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/capricornio_uy8hvp.png" alt="" onclick="imageSelected('sagitario')"></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932240/iconos_zodiaco/escorpio_jsor1e.png" alt="" onclick="imageSelected('escorpio')"></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/tauro_fdbl0m.png" alt="" onclick="imageSelected('tauro')"></div>
+                    <div class="iconSimbol"><img src="https://res.cloudinary.com/dzham2sp8/image/upload/v1676932241/iconos_zodiaco/virgo_fu3vc2.png" alt="" onclick="imageSelected('virgo')"></div>
                 </div>
             </div>
 
@@ -64,9 +64,9 @@
                 <h2>¿Cuál es tu rango de edad?</h2>
                 
                 <div class="btnsContainer">
-                    <button class="age"> 20-29 años</button>
-                    <button class="age"> 30-45 años</button>
-                    <button class="age"> 46-60 años</button>
+                    <button class="age" onclick="inputEdad('20-29')"> 20-29 años</button>
+                    <button class="age" onclick="inputEdad('30-45')"> 30-45 años</button>
+                    <button class="age" onclick="inputEdad('46-60')"> 46-60 años</button>
                 </div>
 
             </div>
@@ -141,6 +141,7 @@
 
     
     <script src="../barra.js"></script>
+    <script src="../js/encuentraTupiedra.js"></script>
     <!-- bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
